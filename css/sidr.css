@@ -1,0 +1,131 @@
+/* Global Mobile Breakpoints */
+/* Global Colors -- These are used in DB Mega Menu so am saving here so that menu doesn't throw errors */
+/* Site Specific Colors */
+/*dkgreen*/
+/*mdgreen*/
+/*graygreen*/
+/* mintgreen */
+/*dkgray */
+/* ltgray */
+/*dkpurple*/
+/*lime*/
+/*Ferries Colors */
+/* Font Size Bases */
+/* B (18px)	68.66px */
+/* A (16px)	61.04px */
+/* B (18px)	54.93px */
+/* A (16px)	48.83px */
+/* B (18px)	43.95px */
+/* A (16px)	39.06px */
+/* B (18px)	35.16px */
+/* A (16px)	31.25px */
+/* B (18px)	28.13px */
+/* A (16px)	25.00px */
+/* B (18px)	22.50px */
+/* A (16px)	20.00px */
+/* B (18px)	18.00px */
+/* A (16px)	16.00px */
+/* B (18px)	14.40px */
+/* A (16px)	12.80px */
+/* B (18px)	11.52px */
+/* A (16px)	10.00px */
+/* B (18px)	9.22px */
+/* A (16px)	8.19px */
+/* B (18px)	7.37px */
+/* A (16px)	6.55px */
+/* B (18px)	5.90px */
+/* A (16px)	5.24px */
+/* B (18px)	4.72px */
+/* A (16px)	4.19px */
+
+@font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:400;font-display:block;src:url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.eot);src:url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.eot#iefix) format("embedded-opentype"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.woff2) format("woff2"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.woff) format("woff"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.ttf) format("truetype"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.svg#fontawesome) format("svg");}
+@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:300;font-display:block;src:url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.eot);src:url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.eot#iefix) format("embedded-opentype"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.woff2) format("woff2"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.woff) format("woff"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.ttf) format("truetype"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.svg#fontawesome) format("svg");}
+@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:400;font-display:block;src:url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.eot);src:url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.eot#iefix) format("embedded-opentype"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.woff2) format("woff2"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.woff) format("woff"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.ttf) format("truetype"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.svg#fontawesome) format("svg");}
+@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:900;font-display:block;src:url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.eot);src:url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.eot#iefix) format("embedded-opentype"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.woff2) format("woff2"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.woff) format("woff"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.ttf) format("truetype"),url(https://dev-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.svg#fontawesome) format("svg");}
+#sidr-mobile,
+#block-sidrtriggerbuttonblock, #main-menu {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  #sidr-mobile,
+  #block-sidrtriggerbuttonblock, #main-menu {
+    display: block;
+  }
+  #sidr-mobile button.sidr-trigger,
+  #block-sidrtriggerbuttonblock button.sidr-trigger, #main-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 34px;
+    width: 33px;
+    font-size: 2rem;
+  }
+}
+.sidr, #main-menu {
+  background: #97d700;
+  box-shadow: none;
+}
+.sidr .navbar-default, #main-menu  {
+  background-color: #97d700;
+}
+.sidr ul {
+  border-bottom: none;
+}
+.sidr ul li {
+    border-top: none;
+  border-bottom: none;
+}
+.sidr ul li a {
+  color: #1D252D;
+  font-weight: 600;
+  line-height: 1.8rem;
+  padding: 3px 10px 5px 10px;
+}
+.sidr ul li a .caret {
+  display: none;
+}
+.sidr ul li a:focus,
+.sidr ul li a:hover {
+  background-color: transparent;
+  padding: 0;
+  text-decoration: underline;
+  border: none;
+  outline-color: none;
+}
+.sidr ul li.active a {
+  box-shadow: none!important;
+}
+.sidr ul li ul li {
+  border: none;
+  list-style-type: none;
+  padding: 5px 0;
+}
+.sidr ul li ul li a {
+  border: none;
+}
+.sidr .form-type-search {
+  width: 75%;
+  display: inline-block;
+}
+.sidr .form-actions {
+  display: inline;
+}
+.sidr input[type="search"] {
+  background-color: #fff;
+}
+.sidr button {
+  background-color: transparent;
+}
+.sidr-trigger {
+  background-color: #97d700;
+  color: #1D252D;
+  border: none;
+  border-radius: 4px;
+  height: 20px;
+  text-align: center;
+}
+
+.fa-bars {
+  color:  #000;
+}
+

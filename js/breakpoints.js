@@ -1,15 +1,3 @@
-$(function(){
-	$(".btn-close,.navbar-toggle,.overlay").on('click',function(e){
-		e.stopPropagation();
-        $("body").toggleClass("toggled");
-        $(".main.navbar").toggleClass("active");
-	});
-    $("#edit-submit").on('click',function(e){
-		e.stopPropagation();
-		if($("#edit-keys").val().length>0){$("#search-api-page-block-form-search").submit();return;}
-	});
-});
-
 (function ($) {
 	'use strict';
 	behaviors.filter_toggle = {

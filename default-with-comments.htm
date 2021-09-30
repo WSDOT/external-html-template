@@ -2,6 +2,24 @@
 <html>
 
 <head>
+    
+    <!-- 09/27 Remove all uneeded stylesheets (including references to megamenu -->
+    <!-- <link rel="shortcut icon" href="https://live-wsdot-wsdot.pantheonsite.io/sites/default/files/dot.ico" type="image/vnd.microsoft.icon">
+    <link rel="revision" href="https://live-wsdot-wsdot.pantheonsite.io/travel/commercial-vehicles"> 
+    <link rel="stylesheet" media="all" href="https://live-wsdot-wsdot.pantheonsite.io/modules/contrib/we_megamenu/assets/includes/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="https://live-wsdot-wsdot.pantheonsite.io/themes/drupalbase/assets/css/megamenu-custom.css">
+
+    <link rel="stylesheet" media="all" href="https://live-wsdot-wsdot.pantheonsite.io/core/modules/layout_discovery/layouts/twocol/twocol.css">
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap">
+    <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap">
+    <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&amp;display=swap">
+    <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&amp;display=swap">
+    <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+    <link rel="stylesheet" media="all" href="https://live-wsdot-wsdot.pantheonsite.io/core/modules/system/css/components/align.module.css">
+    <link rel="stylesheet" media="all" href="https://live-wsdot-wsdot.pantheonsite.io/core/modules/system/css/components/container-inline.module.css">
+    <link rel="stylesheet" media="all" href="https://live-wsdot-wsdot.pantheonsite.io/core/modules/system/css/components/clearfix.module.css">
+    -->
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +44,7 @@
     <link rel="stylesheet" media="all" href="https://live-wsdot-wsdot.pantheonsite.io/themes/drupalbase_custom/assets/styles/megamenu-custom-newDB8.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidr.css">
+    <!-- Adding new stylesheet for external search and travel center integration -->
     <link rel="stylesheet" media="all" href="https://live-wsdot-wsdot.pantheonsite.io/modules/custom/wsdot_external_search_forms/assets/css/wsdot_external_search_forms.css">
 </head>
 
@@ -34,6 +53,7 @@
     <span class="btn-close"></span>
     <div class="overlay"></div>
     <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+        <!-- Cleaning up aria for accessibility - change role="main" to role="alert" and id="main-content" from alert wrapper -->
         <div class="wrapper-alert js-quickedit-main-content" role="alert">
             <div class="row">
                 <section class="container">
@@ -48,7 +68,7 @@
                 </section>
             </div>
         </div>
- 
+        <!-- Cleaning up aria for accessibility - remove role="header" from header -->
         <header id="header">
             <div class="header-wrapper">
                 <div class="logo-container">
@@ -57,6 +77,32 @@
                             <img src="img/wsdot-logo-white.svg" alt="Home">
                         </a>
                         <a class="name navbar-brand" href="/" title="Home" rel="home">WSDOT</a>
+                        <!-- 09/27 Remove section#block-headerlinks>
+                        <section id="block-headerlinks" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 block block-block-content block-block-content7289c7a7-b6dd-4b1f-b3a9-1ce517572c24 clearfix">
+                            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+                                <ul>
+                                    <li><a href="/about/news">News</a></li>
+                                    <li><a href="/employment">Employment</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    -->
+                    <!-- Replace search with external search box -->
+                        <!--<section class="search-api-page-block-form-search search-api-page-block-form search-form search-block-form container-inline block block-search-api-page block-search-api-page-form-block clearfix" data-drupal-selector="search-api-page-block-form-search" id="block-searchapipagesearchblockform">
+                            <h2 class="block-title">Search Api Page search block form</h2>
+                            <form action="https://live-wsdot-wsdot.pantheonsite.io/search" method="post" id="search-api-page-block-form-search" accept-charset="UTF-8">
+                                <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+                                    <label for="edit-keys" class="control-label sr-only"><span class="form-value">Search</span></label>
+                                    <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" class="form-search form-control" placeholder="Search" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128">
+                                </div>
+                                <input autocomplete="off" data-drupal-selector="form-f9u4aflua-hfsq9yzdazxizistbtrzmivm-e7c1yg6c" type="hidden" name="form_build_id" value="form-f9u4AFlUA_HfSQ9YzdAZxIZISTbTRzmIVM-e7C1YG6c">
+                                <input data-drupal-selector="edit-search-api-page-block-form-search" type="hidden" name="form_id" value="search_api_page_block_form_search">
+                                <div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions">
+                                    <button class="search-form__submit button js-form-submit form-submit btn-default btn" data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">Search</span></button>
+                                </div>
+                            </form>
+                        </section> -->
+                        <!-- New Search block -->
                         <section id="block-externalsearchsearchformblock" class="contextual-region block block-wsdot-external-search-forms block-external-search-form-block clearfix">
       
                             <form action="https://www.wsdot.wa.gov/search-beta" method="GET" id="ext-search" class="form-inline external-search-form" data-drupal-form-fields="ext-search-input">
@@ -75,11 +121,40 @@
         </header>
         <div class="nav-outer-wrapper">
             <div class="navbar navbar-default container" id="navbar" role="nav">
+                <!--<button role="button" id="menu-button" class="menu-toggle"><i class="far fa-bars"></i><span class="sr-only"></span></button> -->
                 
+                <!-- 09/27 New Menu -->
                 <div class="nav-tabs break-lg-control" aria-hidden="false">
                     <nav aria-describedby="block-mainnavigation-8-menu">
                         <h2 class="sr-only menu-heading" id="block-mainnavigation-8-menu">Main navigation</h2>
                         <div class="container-fluid" id="menu-schmenu">
+                            <!-- Replace ul class="we-mega-menu-ul" with new menu -->
+                            <!--<ul class="we-mega-menu-ul nav nav-tabs">
+                                                <li class="we-mega-menu-li" data-level="0">
+                                                    <a class="we-mega-menu-li" title="" href="/" target="">
+                                                        Home </a>
+                                                </li>
+                                                <li class="we-mega-menu-li" data-level="0">
+                                                    <a class="we-mega-menu-li" title="" href="/travel" target="">
+                                                        Travel </a>
+                                                </li>
+                                                <li class="we-mega-menu-li" data-level="0">
+                                                    <a class="we-mega-menu-li" title="" href="/construction-planning" target="">
+                                                        Construction &amp; Planning </a>
+                                                </li>
+                                                <li class="we-mega-menu-li" data-level="0">
+                                                    <a class="we-mega-menu-li" title="" href="/business-wsdot" target="">
+                                                        Business with WSDOT </a>
+                                                </li>
+                                                <li class="we-mega-menu-li" data-level="0">
+                                                    <a class="we-mega-menu-li" title="" href="/engineering-standards" target="">
+                                                        Engineering &amp; Standards </a>
+                                                </li>
+                                                <li class="we-mega-menu-li" data-level="0">
+                                                    <a class="we-mega-menu-li" title="" href="/about" target="">
+                                                        About </a>
+                                                </li>
+                                            </ul> -->
                             
                             <ul class="menu menu--main nav">
                                 <li class="first">
@@ -103,8 +178,9 @@
                 </div>
             </div>
         </div>
-        
+        <!-- Cleaning up for accessibility - add id="main-content" -->
         <div role="main" class="main-container container" id="main-content">
+            <!-- Add display: block to .row to fix float issues from main style.css -->
             <div class="row" style="display: block;">
                 <div class="col-xs-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="region region-content-top">
@@ -198,6 +274,7 @@
                 </section>
             </div>
         </div>
+        <!-- Begin local navigation -->
         <div class="content-bottom-wrapper">
             <div class="container">
                 <div class="region-content-bottom">
@@ -212,7 +289,8 @@
                 </div>
             </div>
         </div>
-        
+        <!-- End local navigation -->
+        <!-- Cleaning up for accessibility move role="contentinfo" to footer-wrapper -->
         <div class="footer-wrapper" role="contentinfo">
             <footer class="footer">
                 <div class="container">
@@ -220,8 +298,10 @@
                         <section id="block-footer1" class="col-lg-2 col-md-2 col-sm-6 col-xs-12 block block-block-content block-block-content056b448f-d00e-4781-b2d6-5903107de9ee clearfix">
                             <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
                                 <ul>
+                                    <!-- 09/27 Remove About link from footer and update all footer links-->
+                                    <!--<li><a href="https://live-wsdot-wsdot.pantheonsite.io/about">About</a></li> -->
                                     <li><a href="https://live-wsdot-wsdot.pantheonsite.io/about/contacts">Contact</a></li>
-                                    <li><a href="https://live-wsdot-wsdot.pantheonsite.io/about/civil-rights-act-title-vi-and-ada">Civil rights, Title VI, and Accessibility</a></li>
+                                    <li><a href="https://live-wsdot-wsdot.pantheonsite.io/about/civil-rights-act-title-vi-and-ada">ADA</a></li>
                                     <li><a href="https://live-wsdot-wsdot.pantheonsite.io/sitemap">Site index</a></li>
                                 </ul>
                             </div>
@@ -229,13 +309,14 @@
                         <section id="block-footer2" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 block block-block-content block-block-contentd6f7d4a7-99f3-475f-85ec-c1f97dcc99e4 clearfix">
                             <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
                                 <p class="update">&nbsp;<span class="fontawesome-icon-inline"><span class="fas fa-envelope"></span>&nbsp;</span><a href="#">Sign up for email or text updates</a></p>
-                                
+                                <!-- 09/27 Adding real email sign up text -->
                                 <p>Subscribe to customized email or text alerts to help you know before you go. Receive current traffic conditions, mountain pass reports, construction updates and more.</p>
                             </div>
                         </section>
                         <section id="block-footer3" class="col-lg-2 col-md-2 col-sm-6 col-xs-12 block block-block-content block-block-contentb863acea-75cf-4d12-90c4-5c82a36558bb clearfix">
                             <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
                                 <ul>
+                                    <!-- Adding links to footer -->
                                     <li><a href="https://traffic.wsdot.wa.gov/"><span class="fontawesome-icon-inline"><span class="fal fa-external-link"></span></span></a>&nbsp;&nbsp;<a href="https://traffic.wsdot.wa.gov/">WSDOT Traffic App</a></li>
                                     <li><a href="https://access.wa.gov/"><span class="fontawesome-icon-inline"><span class="fal fa-external-link"></span></span></a><span class="fontawesome-icon-inline">&nbsp;&nbsp;</span><a href="https://access.wa.gov/">Access Washington</a></li>
                                     <li><a href="https://www.governor.wa.gov/"><span class="fontawesome-icon-inline"><span class="fal fa-external-link"></span></span></a><span class="fontawesome-icon-inline">&nbsp;&nbsp;</span><a href="https://www.governor.wa.gov/">Office of the Governor</a></li>
@@ -261,6 +342,7 @@
                     </div>
             </footer>
         </div>
+        <!-- Cleaning up for accessibility, remove role="content-info" from footer bottom -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="region region-footer-bottom">
@@ -328,7 +410,7 @@
                                 </div>
                             </div>
                             <ul>
-                                
+                                <!-- 09/27 Updating content and links here too -->
                                 <li>Copyright WSDOT &copy;</li>
                                 <li><a href="https://live-wsdot-wsdot.pantheonsite.io/about/web-privacy-notice">Privacy policy</a></li>
                                 <li><a href="https://live-wsdot-wsdot.pantheonsite.io/about/agency-rule-making">Agency rule making</a></li>
@@ -339,6 +421,7 @@
             </div>
         </div>
     </div>
+    <!-- add all this stuff for the sidr mobile menu -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
     <script src="js/main.js"></script>
