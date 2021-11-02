@@ -37,13 +37,8 @@
 /* A (16px)	5.24px */
 /* B (18px)	4.72px */
 /* A (16px)	4.19px */
-
-@font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:400;font-display:block;src:url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.eot);src:url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.eot#iefix) format("embedded-opentype"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.woff2) format("woff2"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.woff) format("woff"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.ttf) format("truetype"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-brands-400.svg#fontawesome) format("svg");}
-@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:300;font-display:block;src:url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.eot);src:url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.eot#iefix) format("embedded-opentype"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.woff2) format("woff2"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.woff) format("woff"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.ttf) format("truetype"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-light-300.svg#fontawesome) format("svg");}
-@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:400;font-display:block;src:url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.eot);src:url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.eot#iefix) format("embedded-opentype"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.woff2) format("woff2"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.woff) format("woff"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.ttf) format("truetype"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-regular-400.svg#fontawesome) format("svg");}
-@font-face{font-family:"Font Awesome 5 Pro";font-style:normal;font-weight:900;font-display:block;src:url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.eot);src:url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.eot#iefix) format("embedded-opentype"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.woff2) format("woff2"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.woff) format("woff"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.ttf) format("truetype"),url(https://live-wsdot-wsdot.pantheonsite.io/libraries/fontawesome/webfonts/fa-solid-900.svg#fontawesome) format("svg");}
 #sidr-mobile,
-#block-sidrtriggerbuttonblock, #main-menu {
+#block-sidrtriggerbuttonblock, #main-menu  {
   display: none;
 }
 @media screen and (max-width: 991px) {
@@ -52,7 +47,7 @@
     display: block;
   }
   #sidr-mobile button.sidr-trigger,
-  #block-sidrtriggerbuttonblock button.sidr-trigger, #main-menu {
+  #block-sidrtriggerbuttonblock button.sidr-trigger, #main-menu  {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -61,36 +56,52 @@
     font-size: 2rem;
   }
 }
-.sidr, #main-menu {
-  background: #97d700;
+.sidr  {
+  background: #fff;
   box-shadow: none;
 }
-.sidr .navbar-default, #main-menu  {
-  background-color: #97d700;
-}
-.sidr ul {
-  border-bottom: none;
+.sidr .navbar-default {
+  background-color: #fff;
 }
 .sidr ul li {
-    border-top: none;
-  border-bottom: none;
+  /*padding: 3px 3px 3px 0;*/
+  border-top: none;
+  border-bottom: 2px solid #F4F4F5;
+  position: initial;
+  display: initial;
 }
 .sidr ul li a {
   color: #1D252D;
   font-weight: 600;
   line-height: 1.8rem;
-  padding: 3px 10px 5px 10px;
+  border-bottom: 1px solid #F4F4F5;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 .sidr ul li a .caret {
-  display: none;
+  /*display: none; */
+  border: none;
+}
+.sidr ul li a .caret:after {
+  content: '\f078';
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  color: #007B5F;
+  right: 5px;
+  font-weight: 600;
+  top: 12px;
 }
 .sidr ul li a:focus,
 .sidr ul li a:hover {
   background-color: transparent;
-  padding: 0;
+  /*padding: 0; */
   text-decoration: underline;
   border: none;
   outline-color: none;
+  box-shadow:  none;
+}
+.sidr ul li a.has-children.is-active {
+  border-bottom: none;
 }
 .sidr ul li.active a {
   box-shadow: none!important;
@@ -98,10 +109,12 @@
 .sidr ul li ul li {
   border: none;
   list-style-type: none;
-  padding: 5px 0;
+  padding: 8px 0;
+  display: block;
 }
 .sidr ul li ul li a {
   border: none;
+  color: #007B5F;
 }
 .sidr .form-type-search {
   width: 75%;
@@ -122,10 +135,9 @@
   border: none;
   border-radius: 4px;
   height: 20px;
-  text-align: center;
 }
-
-.fa-bars {
-  color:  #000;
+.sidr-trigger .fa-bars {
+    color: #1D252D;
+    text-align: center;
+    padding-left: 7px;
 }
-
