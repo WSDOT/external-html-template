@@ -1,0 +1,208 @@
+/* Global Mobile Breakpoints */
+/* Global Colors -- These are used in DB Mega Menu so am saving here so that menu doesn't throw errors */
+/* Site Specific Colors */
+/*dkgreen*/
+/*mdgreen*/
+/*graygreen*/
+/* mintgreen */
+/*dkgray */
+/* ltgray */
+/*dkpurple*/
+/*lime*/
+/*Ferries Colors */
+/* Font Size Bases */
+/* B (18px)	68.66px */
+/* A (16px)	61.04px */
+/* B (18px)	54.93px */
+/* A (16px)	48.83px */
+/* B (18px)	43.95px */
+/* A (16px)	39.06px */
+/* B (18px)	35.16px */
+/* A (16px)	31.25px */
+/* B (18px)	28.13px */
+/* A (16px)	25.00px */
+/* B (18px)	22.50px */
+/* A (16px)	20.00px */
+/* B (18px)	18.00px */
+/* A (16px)	16.00px */
+/* B (18px)	14.40px */
+/* A (16px)	12.80px */
+/* B (18px)	11.52px */
+/* A (16px)	10.00px */
+/* B (18px)	9.22px */
+/* A (16px)	8.19px */
+/* B (18px)	7.37px */
+/* A (16px)	6.55px */
+/* B (18px)	5.90px */
+/* A (16px)	5.24px */
+/* B (18px)	4.72px */
+/* A (16px)	4.19px */
+html body header {
+  background: #FF6A13 !important;
+}
+html body .content-super-bottom-wrapper {
+  background-color: #FFE9DC;
+  background-image: url("../img/safety-icons/candy-stripe-bar.svg");
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+}
+html body .content-super-bottom-wrapper #block-performancehighlight1:before,
+html body .content-super-bottom-wrapper #block-performancehighlight2:before,
+html body .content-super-bottom-wrapper #block-performancehighlight3:before,
+html body .content-super-bottom-wrapper #block-performancehighlight1:after,
+html body .content-super-bottom-wrapper #block-performancehighlight2:after,
+html body .content-super-bottom-wrapper #block-performancehighlight3:after {
+  border-color: rgba(255, 106, 19, 0.75) !important;
+}
+html body .content-super-bottom-wrapper #block-performancehighlight1 h3,
+html body .content-super-bottom-wrapper #block-performancehighlight2 h3,
+html body .content-super-bottom-wrapper #block-performancehighlight3 h3,
+html body .content-super-bottom-wrapper #block-performancehighlight1 p,
+html body .content-super-bottom-wrapper #block-performancehighlight2 p,
+html body .content-super-bottom-wrapper #block-performancehighlight3 p {
+  color: #1D252D !important;
+}
+html body .footer,
+html body .footer-bottom {
+  background: #FF8842 !important;
+  color: #1D252D;
+  font-weight: 700;
+}
+html body .footer a,
+html body .footer-bottom a {
+  color: #1D252D !important;
+  border-bottom: #1D252D !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+html body .footer a.ext:before,
+html body .footer-bottom a.ext:before {
+  color: #1D252D !important;
+}
+html body .footer a .social-text,
+html body .footer-bottom a .social-text {
+  border-bottom: #1D252D !important;
+}
+html body .footer p,
+html body .footer-bottom p {
+  color: #1D252D !important;
+  font-weight: 700 !important;
+}
+html body .footer ul li,
+html body .footer-bottom ul li {
+  color: #1D252D !important;
+}
+html body .footer-bottom .container {
+  border-top: rgba(255, 106, 19, 0.75) !important;
+}
+html body .menu--main li.last a {
+  padding-top: 12px;
+}
+html body .menu--main li.last a:before {
+  content: '';
+  background-image: url("../img/workzone-safety-icon.png");
+  width: 37px;
+  height: 37px;
+  float: left;
+  background-repeat: no-repeat;
+  margin-top: -8px;
+}
+html body #main-content .block-views-blockmenu-blocks-block-4 .views-row:hover {
+  border-top: 1px solid #FF6A13 !important;
+  border-left: 1px solid #FF6A13 !important;
+  border-right: 1px solid #FF6A13 !important;
+  border-bottom: 5px solid #FF6A13 !important;
+}
+html body.path-frontpage #main-content {
+  background-image: url("../img/safety-icons/candy-stripe-bar.svg");
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li.active#tab-slide-0 a:before,
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li:hover#tab-slide-0 a:before {
+  background-image: url(/themes/drupalbase_custom/assets/images/safety-icons/car.svg);
+  width: 23.25px;
+  height: 20.67px;
+}
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li.active#tab-slide-1 a:before,
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li:hover#tab-slide-1 a:before {
+  background-image: url(/themes/drupalbase_custom/assets/images/safety-icons/ferry.svg);
+  width: 30px;
+  height: 30.67px;
+}
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li.active#tab-slide-2 a:before,
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li:hover#tab-slide-2 a:before {
+  background-image: url(/themes/drupalbase_custom/assets/images/safety-icons/aircraft.svg);
+  width: 33.25px;
+  height: 29.67px;
+}
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li.active#tab-slide-3 a:before,
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li:hover#tab-slide-3 a:before {
+  background-image: url(/themes/drupalbase_custom/assets/images/safety-icons/train.svg);
+  width: 21.25px;
+  height: 29.67px;
+}
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li.active#tab-slide-4 a:before,
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li:hover#tab-slide-4 a:before {
+  background-image: url(/themes/drupalbase_custom/assets/images/safety-icons/bike.svg);
+  width: 33.25px;
+  height: 29.67px;
+}
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li.active#tab-slide-5 a:before,
+html body.path-frontpage #block-views-block-tabbed-slideshow-block-1 .tabs-left ul.nav-tabs li:hover#tab-slide-5 a:before {
+  background-image: url(/themes/drupalbase_custom/assets/images/safety-icons/bus.svg);
+  width: 23.25px;
+  height: 29.67px;
+}
+html body.path-frontpage .wrapper-content-bottom {
+  background-color: #FFE9DC;
+  background-image: url("../img/workzone-safety-cone.png");
+  background-repeat: no-repeat;
+  background-size: 23%;
+  background-position: bottom left;
+}
+html body.page-node-type-page #main-content {
+  background-image: url("../img/workzone-safety-cone.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: bottom 150px right -20px;
+}
+html body.page-node-type-page .region-sidebar-right .email-subscription-link {
+  background: #fff;
+}
+html body.page-node-type-page .region-sidebar-right .workzone-safety-block {
+  background-image: url("../img/workzone-safety-border.png");
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+  padding: 15px 15px 30px 15px;
+}
+@media screen and (max-width: 991px) {
+  html body.page-node-type-page .region-sidebar-right .workzone-safety-block {
+    background-image: none;
+    border: 4px solid #ff6a13;
+    width: 100%!important;
+    margin-bottom: 30px;
+    padding: 20px 20px 0 20px;
+    overflow: visible;
+    margin-left: 0;
+    height: fit-content;
+  }
+  html body.page-node-type-page .region-sidebar-right .workzone-safety-block p:last-of-type {
+    float: right;
+  }
+}
+html body.page-node-type-page .region-sidebar-right .workzone-safety-block h2:before {
+  content: '';
+  background-image: url("../img/workzone-safety-icon.png");
+  width: 37px;
+  height: 52px;
+  float: left;
+  background-repeat: no-repeat;
+}
