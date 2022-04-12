@@ -62,3 +62,6 @@ button.btn-info::hover {background-color:#0b354d!important;color:#f9f9a5;}
 button.btn-danger {background-color:#005151;transition:background .5s ease;border-color:#005b7f;margin-top:3px;}
 button.btn-danger::hover { background-color:#0b354d;color:#f9f9a5;}
 
+.wsdot-logo-footer path,polygon {
+  fill: #ffffff;
+}

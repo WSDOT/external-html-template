@@ -206,3 +206,7 @@ html body.page-node-type-page .region-sidebar-right .workzone-safety-block h2:be
   float: left;
   background-repeat: no-repeat;
 }
+
+.wsdot-logo-footer path,polygon {
+  fill: #000000;
+}
