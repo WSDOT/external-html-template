@@ -50,9 +50,9 @@
   #block-sidrtriggerbuttonblock button.sidr-trigger, #main-menu  {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 15px;
     height: 34px;
-    width: 33px;
+    width: 44px;
     font-size: 2rem;
   }
 }
@@ -133,11 +133,11 @@
   background-color: #97d700;
   color: #1D252D;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   height: 20px;
 }
 .sidr-trigger .fa-bars {
-    color: #1D252D;
-    text-align: center;
-    padding-left: 7px;
+  color: #1D252D;
+  text-align: center;
+  padding-left: 13px;
 }
