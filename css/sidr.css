@@ -50,7 +50,7 @@
   #block-sidrtriggerbuttonblock button.sidr-trigger, #main-menu  {
     position: absolute;
     right: 10px;
-    top: 15px;
+    top: 10px;
     height: 34px;
     width: 44px;
     font-size: 2rem;
