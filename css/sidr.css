@@ -41,16 +41,27 @@
 #block-sidrtriggerbuttonblock, #main-menu  {
   display: none;
 }
+
+@media screen and (max-width: 425px) {
+  #sidr-mobile button.sidr-trigger,
+   #block-sidrtriggerbuttonblock button.sidr-trigger, #main-menu {
+     top: 10px;
+   }
+}
+@media screen and (min-width: 426px) and (max-width: 991px) {
+   #sidr-mobile button.sidr-trigger,
+   #block-sidrtriggerbuttonblock button.sidr-trigger, #main-menu {
+     top: 15px;
+   }
+}
 @media screen and (max-width: 991px) {
-  #sidr-mobile,
-  #block-sidrtriggerbuttonblock, #main-menu {
+  #sidr-mobile, #block-sidrtriggerbuttonblock, #main-menu {
     display: block;
   }
   #sidr-mobile button.sidr-trigger,
   #block-sidrtriggerbuttonblock button.sidr-trigger, #main-menu  {
     position: absolute;
     right: 10px;
-    top: 10px;
     height: 34px;
     width: 44px;
     font-size: 2rem;
