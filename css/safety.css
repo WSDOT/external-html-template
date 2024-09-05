@@ -64,6 +64,49 @@ html body .content-super-bottom-wrapper #block-performancehighlight2 p,
 html body .content-super-bottom-wrapper #block-performancehighlight3 p {
   color: #1D252D !important;
 }
+html body .content-sub-bottom-wrapper {
+    background-color: #FFE9DC;
+}
+html body .content-sub-bottom-wrapper .region-content-sub-bottom #block-website-feedback h2 a {
+     color: #1D252D;
+}
+html body .footer-top {
+  background: #FF8842 !important;
+  color: #1D252D;
+}
+html body .footer-top .container .region-footer-top #block-emailupdates {
+    border-bottom: 1pt solid #562101;
+    padding-top: 10px;
+    padding-left: 0;
+}
+html body .footer-top .container .region-footer-top #block-emailupdates .field--name-body p.update {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1D252D;
+    padding-left: 0;
+    padding-bottom: 5px;
+}
+html body .footer-top .container .region-footer-top #block-emailupdates .field--name-body p a {
+    color: #1D252D;
+    font-size: 1.8rem;
+    border-bottom: 0.5pt solid #1D252D;
+    text-decoration: none;
+}
+html body .footer-top .container .region-footer-top #block-emailupdates .field--name-body p a:hover {
+    color: #1D252D;
+    border-bottom: none;
+    text-decoration: none;
+}
+html body .footer-top .container .region-footer-top #block-emailupdates .field--name-body p {
+    color: #1D252D;
+}
+html body .footer .container .region-footer .block h4 {
+    color: #1D252D;
+}
+html body .footer .container .region-footer #block-footer5 .field--name-body ul li a .foreign-language-text {
+    border-bottom: none;
+}
+
 html body .footer,
 html body .footer-bottom {
   background: #FF8842 !important;
@@ -74,8 +117,12 @@ html body .footer a,
 html body .footer-bottom a {
   color: #1D252D !important;
   border-bottom: #1D252D !important;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   text-decoration: underline !important;
+}
+html body .footer a:hover, html body .footer-bottom a:hover {
+    border-bottom: none !important;
+    text-decoration: none !important;
 }
 html body .footer a.ext:before,
 html body .footer-bottom a.ext:before {
@@ -208,5 +255,5 @@ html body.page-node-type-page .region-sidebar-right .workzone-safety-block h2:be
 }
 
 .wsdot-logo-footer path,polygon {
-  fill: #000000;
+  fill: #1D252D !important;
 }
